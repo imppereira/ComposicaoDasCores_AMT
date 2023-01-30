@@ -71,6 +71,7 @@ body{
         align-content: center
     }
     .boxNiveis{
-        margin: 10px 20px 50px 20px;
+        height: 135px;
+        margin: 10px 20px 10px 20px;
     }
 }

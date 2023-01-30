@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
+html, body {
+    min-width: 768px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -302,12 +306,23 @@ p {
 
 @media screen and (max-width: 1023px) {
     #popInstrucoesNivel1 > div {
-        height: 50vh;
+        height: 60vh;
     }
     #popMensagem > div {
-        height: 50vh;
+        height: 60vh;
     }
-
+    #popInstrucoesNivel1 > div > section > img {
+        padding: 30px 30px 30px 30px;
+    }
+    #popInstrucoesNivel1 > div > section:last-child {
+        padding: 30px 50px 50px 50px;
+    }
+    #popMensagem > div > section > img {
+        padding: 30px 30px 30px 30px;
+    }
+    #popMensagem > div > section:last-child {
+        padding: 30px 50px 50px 50px;
+    }
     h1 {
        font-size: 60px;
     }

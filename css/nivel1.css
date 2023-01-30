@@ -25,4 +25,8 @@ main > h2{
     #imagemFundo{
         top:-10%;
     }
+    #divCoresNivel1>svg {
+        width: 75px;
+        height: auto;
+    }
 }

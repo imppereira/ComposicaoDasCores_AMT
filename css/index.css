@@ -1,0 +1,17 @@
+/*IMAGEM DE FUNDO------------------------------*/
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#imagemFundo{
+    position: absolute;
+    z-index: -10000;
+    height: 120%;
+    top:-5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#tituloJogo{
+    margin-top: 0;
+}

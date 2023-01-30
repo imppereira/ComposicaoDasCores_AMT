@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Composição das Cores | Nível 1</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/nivel1.css">
+</head>
+<body>
+<header id="barraNavegacao">
+    <div><h3 id="subtituloNivel"><b>Nível 1</b> - Conhecer a Cor</h3></div>
+    <div>
+        <button id="botaoInstrucoes" class="botao">Instruções</button>
+        <img id="botaoSom" src="img/BotaoSomOn.png" height="130" width="159" alt="">
+        <img id="botaoSair" src="img/BotaoSair.png" height="120" width="129" alt="">
+    </div>
+</header>
+<main id="boxPrincipal">
+    <section id="popConfirmacaoSair" class="popConfirmacaoSairOff">
+        <div id="divConteudoConfirmacaoSair">
+            <p>Tem a certeza de que quer sair do jogo?</p>
+            <section>
+                <button id="botaoSairJogo" class="botao">Sim</button>
+                <button id="botaoSairPopConfirmacaoSair" class="botao">Não</button>
+            </section>
+
+        </div>
+    </section>
+    <section id="popInstrucoesNivel1" class="popInstrucoesNivel1Off">
+        <div id="divConteudoInstrucoesNivel1">
+            <section>
+                <img id="botaoSairInstrucoes" src="img/cruzFechar.png" height="120" width="120"
+                     alt="cruz para fechar o pop up das instruções">
+            </section>
+            <section>
+                <h3 id="tituloInstrucoes"><b>Instruções</b></h3>
+                <p id="textoInstrucoes">À medida que aparece o nome de uma cor nova, seleciona o quadrado que contém
+                    essa cor. Ao acertares ganhas um ponto, ao errares não ganhas pontos.</p>
+            </section>
+        </div>
+    </section>
+    <section><h2 id="infoNivel1">Seleciona a Cor:</h2>
+        <h2 id="corTextoNivel1">Vermelho (Magenta)</h2></section>
+    <!--    <script src="js/nivel1.js"></script>-->
+    <div id="divCoresNivel1">
+        <!--CORES PRIMÁRIAS-->
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="quadradoVermelho(Magenta)" width="122" height="122" rx="20" fill="rgb(210, 58, 47)"/>
+        </svg>
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="quadradoAzul(Ciano)" width="122" height="122" rx="20" fill="rgb(58, 112, 173)"/>
+        </svg>
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="quadradoAmarelo" width="122" height="122" rx="20" fill="rgb(242, 229, 76)"/>
+        </svg>
+        <!--CORES SECUNDÁRIAS-->
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="quadradoVerde" width="122" height="122" rx="20" fill="rgb(62, 140, 95)"/>
+        </svg>
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="quadradoVioleta" width="122" height="122" rx="20" fill="rgb(102, 60, 133)"/>
+        </svg>
+        <br><br>
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="quadradoLaranja" width="122" height="122" rx="20" fill="rgb(229, 149, 53)"/>
+        </svg>
+        <!--CORES TERCIÁRIAS-->
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="quadradoAmarelo-Laranja" width="122" height="122" rx="20" fill="rgb(245, 199, 70)"/>
+        </svg>
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="quadradoVermelho-Laranja" width="122" height="122" rx="20" fill="rgb(219, 106, 53)"/>
+        </svg>
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="quadradoVermelho-Violeta" width="122" height="122" rx="20" fill="rgb(180, 39, 122)"/>
+        </svg>
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="quadradoAzul-Violeta" width="122" height="122" rx="20" fill="rgb(69, 79, 148)"/>
+        </svg>
+        <br><br>
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="quadradoAzul-Verde" width="122" height="122" rx="20" fill="rgb(65, 148, 183)"/>
+        </svg>
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="quadradoAmarelo-Verde" width="122" height="122" rx="20" fill="rgb(150, 186, 68)"/>
+        </svg>
+        <!--CORES NEUTRAS-->
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="quadradoPreto" width="122" height="122" rx="20" fill="rgb(0,0,0)"/>
+        </svg>
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="quadradoBranco" width="122" height="122" rx="20" fill="rgb(255,255,255)" stroke-width="1"
+                  stroke="rgb(0,0,0)"/>
+        </svg>
+        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect id="quadradoCinza" width="122" height="122" rx="20" fill="rgb(135,135,135)"/>
+        </svg>
+    </div>
+
+    <section id="popMensagem" class="popMensagemOff">
+        <div id="divMensagem">
+            <section>
+                <img id="botaoSairMensagem" src="img/cruzFechar.png" height="120" width="120"
+                     alt="cruz para fechar o pop up das instruções">
+            </section>
+            <section>
+                <h3 id="tituloMensagem"></h3>
+                <p id="textoMensagem"></p>
+            </section>
+        </div>
+    </section>
+
+</main>
+<footer id="barraPontuação">
+    <div>
+        <p id="pontuacaoNivel1">Pontuação Nível 1: <b>0</b> de 15 pontos</p>
+        <p id="pontuacaoFinal">Pontuação Final: 0 pontos</p>
+    </div>
+    <div id="circulosNiveis">
+        <span id="ponto1" class="ponto"></span>
+        <span id="ponto2" class="ponto"></span>
+        <span id="ponto3" class="ponto"></span>
+        <span id="ponto4" class="ponto"></span>
+        <span id="ponto5" class="ponto"></span>
+        <span id="ponto6" class="ponto"></span>
+        <span id="ponto7" class="ponto"></span>
+        <span id="ponto8" class="ponto"></span>
+        <span id="ponto9" class="ponto"></span>
+        <span id="ponto10" class="ponto"></span>
+        <span id="ponto11" class="ponto"></span>
+        <span id="ponto12" class="ponto"></span>
+        <span id="ponto13" class="ponto"></span>
+        <span id="ponto14" class="ponto"></span>
+        <span id="ponto15" class="ponto"></span>
+    </div>
+</footer>
+<script src="js/nivel1_svg.js"></script>
+<script src="js/pontuacaoFinal.js"></script>
+<script type="text/javascript">
+    document.getElementById("botaoInstrucoes").onclick = function () {
+        document.getElementById("popInstrucoesNivel1").classList.add('popInstrucoesNivel1On');
+    };
+    document.getElementById("botaoSairInstrucoes").onclick = function () {
+        document.getElementById("popInstrucoesNivel1").classList.remove('popInstrucoesNivel1On');
+    };
+</script>
+<script src="js/geral.js"></script>
+</body>
+</html>

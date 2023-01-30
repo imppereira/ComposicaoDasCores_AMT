@@ -1,0 +1,62 @@
+/*IMAGEM DE FUNDO------------------------------*/
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#imagemFundo{
+    position: absolute;
+    z-index: -10000;
+    height: 120%;
+    top:-5%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 50%;
+}
+
+#subtituloMenu{
+    width: 100vw;
+    text-align: center;
+    margin: 0 0 10vh 0;
+}
+#boxPrincipal{
+    flex-direction: row;
+    align-content: center
+}
+.boxNiveis{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 20px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+
+    width: 320px;
+    height: 180px;
+    background-color: white;
+
+    color: #000000;
+    margin: 0 20px 0 20px;
+
+    cursor: pointer;
+}
+.boxNiveis > h3:first-child{
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+.boxNiveis > h3:last-child{
+    margin: 10px 0 0 0;
+    font-weight: 500;
+}
+.boxNiveis:hover{
+    border: 5px solid #000000;
+}

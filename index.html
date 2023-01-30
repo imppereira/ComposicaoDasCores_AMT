@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Composição das Cores</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--IMAGEM DE FUNDO-->
+<svg id="imagemFundo" width="1460" height="982" viewBox="0 0 1460 982" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="71" y="-7" width="49" height="201" rx="15" fill="#DB6A35"/>
+    <rect x="71" y="261" width="49" height="76" rx="15" fill="#F5C746"/>
+    <rect x="1047" y="-34" width="49" height="201" rx="15" fill="#4194B7"/>
+    <rect x="1047" y="216" width="49" height="76" rx="15" fill="#F5C746"/>
+    <rect x="924" y="720" width="49" height="122" rx="15" fill="#E59535"/>
+    <rect x="924" y="909" width="49" height="76" rx="15" fill="#DB6A35"/>
+    <rect x="317" y="-103" width="49" height="173" rx="15" fill="#4194B7"/>
+    <rect x="317" y="111" width="49" height="76" rx="15" fill="#D23A2F"/>
+    <rect x="437" y="668" width="49" height="173" rx="15" fill="#454F94"/>
+    <circle cx="461.5" cy="932.5" r="24.5" fill="#4194B7"/>
+    <rect x="608" y="322" width="49" height="173" rx="15" transform="rotate(-180 608 322)" fill="#96BA44"/>
+    <circle cx="583.5" cy="57.5" r="24.5" transform="rotate(-180 583.5 57.5)" fill="#4194B7"/>
+    <rect x="804" y="-47" width="49" height="173" rx="15" fill="#B4277A"/>
+    <circle cx="828.5" cy="190.5" r="24.5" fill="#D23A2F"/>
+    <rect x="195" y="555" width="49" height="102" rx="15" fill="#B4277A"/>
+    <circle cx="219.5" cy="730.5" r="24.5" fill="#3E8C5F"/>
+    <rect x="195" y="796" width="49" height="339" rx="15" fill="#663C85"/>
+    <rect x="1339" y="426" width="49" height="102" rx="15" transform="rotate(180 1339 426)" fill="#4194B7"/>
+    <circle cx="1314.5" cy="250.5" r="24.5" transform="rotate(180 1314.5 250.5)" fill="#454F94"/>
+    <rect x="1339" y="185" width="49" height="339" rx="15" transform="rotate(180 1339 185)" fill="#D23A2F"/>
+    <rect x="1167" y="615" width="49" height="102" rx="15" fill="#DB6A35"/>
+    <circle cx="1191.5" cy="790.5" r="24.5" fill="#96BA44"/>
+    <rect x="1167" y="856" width="49" height="165" rx="15" fill="#F2E54C"/>
+    <rect x="1411" y="552" width="49" height="102" rx="15" fill="#663C85"/>
+    <circle cx="1435.5" cy="727.5" r="24.5" fill="#F5C746"/>
+    <rect x="1411" y="793" width="49" height="165" rx="15" fill="#B4277A"/>
+    <rect x="729" y="1072" width="49" height="173" rx="15" transform="rotate(-180 729 1072)" fill="#3E8C5F"/>
+    <rect x="729" y="858" width="49" height="76" rx="15" transform="rotate(-180 729 858)" fill="#3A70AD"/>
+    <rect x="49" y="1010" width="49" height="173" rx="15" transform="rotate(-180 49 1010)" fill="#96BA44"/>
+    <rect x="49" y="796" width="49" height="76" rx="15" transform="rotate(-180 49 796)" fill="#E59535"/>
+</svg>
+<header id="barraNavegacao">
+    <div></div>
+    <div>
+        <img id="botaoSom" src="img/BotaoSomOn.png" height="130" width="159" alt="">
+        <audio id="audio" loop>
+            <source src="music/Ice_Fire_King_Canyon.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</header>
+<main id="boxPrincipal">
+    <h1 id="tituloJogo">Composição das Cores</h1>
+    <button id="botaoMenu" class="botao">Menu</button>
+</main>
+
+<script type="text/javascript">
+    document.getElementById("botaoMenu").onclick = function () {
+        window.location = "menu.html";
+    };
+</script>
+<script src="js/geral.js"></script>
+</body>
+</html>

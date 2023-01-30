@@ -1,0 +1,21 @@
+canvas {
+    display: block;
+}
+#boxPrincipal{
+    height: 84vh;
+}
+main > h2{
+    margin-top: 0;
+}
+
+#divCoresNivel1>svg{
+    cursor: pointer;
+    margin: 0 10px;
+}
+#infoNivel1, #corTextoNivel1{
+    display: inline-block;
+}
+#corTextoNivel1{
+    font-weight: 700;
+    margin-left: 10px;
+}

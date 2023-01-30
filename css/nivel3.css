@@ -1,0 +1,65 @@
+main > h2{
+    margin-top: 0;
+}
+#boxPrincipal{
+    height: 84vh;
+    flex-direction: row;
+    align-content: center;
+}
+#divCoresNivel1>svg{
+    cursor: pointer;
+    margin: 0 10px;
+}
+#infoNivel1, #corTextoNivel1{
+    display: inline-block;
+}
+#corTextoNivel1{
+    font-weight: 700;
+    margin-left: 10px;
+}
+#sectionConteudoPrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#sectionConteudoPrincipal>svg{
+    margin: 0 30px;
+}
+#divCorPedida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#divCorPedida > button{
+    margin-top: 20px;
+}
+#divCoresNivel3{
+    display: flex;
+    flex-direction: row;
+}
+#divCoresNeutrasNivel3, #divCoresPrimariasNivel3, #divCoresSecundariasNivel3, #divCoresTerciariasNivel3{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+#divCoresNeutrasNivel3 > svg, #divCoresPrimariasNivel3 > svg, #divCoresSecundariasNivel3 > svg, #divCoresTerciariasNivel3 > svg{
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#divCoresTerciariasNivel3 > section{
+    display: flex;
+    flex-direction: row;
+}
+#divCoresTerciariasNivel3 > section > section{
+    display: flex;
+    flex-direction: column;
+}
+#divCoresTerciariasNivel3 > section > section > svg{
+    margin: 10px 10px 10px 0;
+    cursor: pointer;
+}
+#divCoresTerciariasNivel3 > section > section:last-child > svg{
+    margin-right: 0;
+}

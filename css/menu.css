@@ -60,3 +60,17 @@ body{
 .boxNiveis:hover{
     border: 5px solid #000000;
 }
+
+
+@media screen and (max-width: 1084px) {
+    #imagemFundo{
+        top:-10%;
+    }
+    #boxPrincipal{
+        flex-direction: column;
+        align-content: center
+    }
+    .boxNiveis{
+        margin: 10px 20px 50px 20px;
+    }
+}

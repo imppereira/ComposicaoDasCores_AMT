@@ -298,3 +298,21 @@ p {
 
     color: #000000;
 }
+
+
+@media screen and (max-width: 1023px) {
+    #popInstrucoesNivel1 > div {
+        height: 50vh;
+    }
+    #popMensagem > div {
+        height: 50vh;
+    }
+
+    h1 {
+       font-size: 60px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+
+}

@@ -63,3 +63,10 @@ main > h2{
 #divCoresTerciariasNivel3 > section > section:last-child > svg{
     margin-right: 0;
 }
+
+
+@media screen and (max-width: 1023px) {
+    #divCoresNivel3 {
+        flex-direction: column;
+    }
+}

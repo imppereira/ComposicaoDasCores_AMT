@@ -67,18 +67,18 @@ main > h2{
 
 @media screen and (max-width: 1023px) {
     #sectionConteudoPrincipal>svg {
-        width: 200px;
+        width: 250px;
         height: auto;
     }
     #divCoresNeutrasNivel3 > svg, #divCoresPrimariasNivel3 > svg, #divCoresSecundariasNivel3 > svg, #divCoresTerciariasNivel3 > svg {
-        width: 75px;
+        width: 100px;
         height: auto;
     }
     #divCorPedida > svg {
-        width: 75px;
+        width: 100px;
         height: auto;
     }
     #botaoApagar{
-        width: 80px;
+        width: 100px;
     }
 }

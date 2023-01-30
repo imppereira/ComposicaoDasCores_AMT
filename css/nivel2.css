@@ -30,7 +30,7 @@ main > h2{
 
 @media screen and (max-width: 1023px) {
     svg {
-        width: 375px;
+        width: 400px;
         height: auto;
     }
 }

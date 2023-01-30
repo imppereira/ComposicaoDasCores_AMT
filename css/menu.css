@@ -70,8 +70,14 @@ body{
         flex-direction: column;
         align-content: center
     }
+    #subtituloMenu {
+        margin: 0 0 2vh 0;
+    }
     .boxNiveis{
-        height: 135px;
+        height: 115px;
         margin: 10px 20px 10px 20px;
+    }
+    .boxNiveis > h3:first-child {
+        margin: 0;
     }
 }

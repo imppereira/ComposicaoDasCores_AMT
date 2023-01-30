@@ -1,12 +1,3 @@
-var url = window.location.pathname;
-console.log(url);
-
-if (url == '/composicaoDasCoresAMT/nivel1.html') {
-    pontuacaoFinal = 0;
-    pontuacaoNivel1 = 0;
-    pontuacaoNivel2 = 0;
-    pontuacaoNivel3 = 0;
-}
 var resultadoCliqueNivel1 = [];
 for (var i = 1; i < 16; i++) {
     resultadoCliqueNivel1 [i] = "ponto" + i;

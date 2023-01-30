@@ -453,5 +453,4 @@ function funcaoPontuacaoNivel3() {
             circuloPontuacao.style.border = "5px #FF945F solid";
         }
     }
-    pontuacaoFinalConta();
 }

@@ -173,7 +173,7 @@ body {
 }
 
 #tituloInstrucoes {
-
+margin-top: 0;
 }
 
 #textoInstrucoes {
@@ -227,6 +227,9 @@ body {
     align-items: center;
 
     padding: 50px;
+}
+#tituloMensagem{
+    margin-top: 0;
 }
 
 #textoMensagem {

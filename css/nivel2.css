@@ -4,6 +4,10 @@
 main > h2{
     margin-top: 0;
 }
+svg {
+    width: 440px;
+    height: auto;
+}
 #barraPontuação{
     padding: 0 20px 0 20px;
     height: 8vh;
@@ -30,7 +34,7 @@ main > h2{
 
 @media screen and (max-width: 1023px) {
     svg {
-        width: 400px;
+        width: 380px;
         height: auto;
     }
 }

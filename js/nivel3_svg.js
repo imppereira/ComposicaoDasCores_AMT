@@ -347,7 +347,7 @@ function quadradoClicado(quadrado) {
                 document.getElementById("popMensagem").classList.remove('popMensagemOn');
                 setTimeout(() => {
                     acertei();
-                    if(coresPedidasNivel3.length==0){
+                    if (coresPedidasNivel3.length == 0) {
                         setTimeout(() => {
                             window.location = "index.html";
                         }, 1000);
@@ -371,6 +371,7 @@ function acertei() {
     document.getElementById("quadradoCorPedida").style.fill = coresPedidasNivel3[Math.floor(Math.random() * coresPedidasNivel3.length)];
     console.log(document.getElementById("quadradoCorPedida").style.fill);
 }
+
 function textoMensagemNivel3() {
     if ((document.getElementById("quadradoCorPedida").style.fill) == corO) { //LARANJA
         document.getElementById("textoMensagem").innerHTML = "Para chegar à cor <b>laranja</b> deve-se misturar <b>amarelo</b> + <b>vermelho (magenta)</b>.";
@@ -389,62 +390,68 @@ function textoMensagemNivel3() {
     }
 }
 
-function funcaoPontuacaoNivel3 (){
-    var circuloPontuacao = document.getElementById("ponto"+[numeroCorClicadaNivel3]);
+function funcaoPontuacaoNivel3() {
+    var circuloPontuacao = document.getElementById("ponto" + [numeroCorClicadaNivel3]);
 
     if ((document.getElementById("quadradoCorPedida").style.fill) == corO) { //LARANJA
         console.log("Número de cliques necessário = 2");
-        if(botaoAplicado == false && contadorClique == 2){
-            pontuacaoNivel3 = pontuacaoNivel3 + 5;
+        if (botaoAplicado == false && contadorClique == 2) {
+            functionNivel3Conta5();
+            //pontuacaoNivel3 = pontuacaoNivel3 + 5;
             circuloPontuacao.style.border = "5px #9EFF00 solid";
-        }
-        else if(botaoAplicado == true){
-            pontuacaoNivel3 = pontuacaoNivel3 + 3;
+        } else if (botaoAplicado == true) {
+            functionNivel3Conta3();
+            //pontuacaoNivel3 = pontuacaoNivel3 + 3;
             circuloPontuacao.style.border = "5px #FF945F solid";
         }
     }
     if ((document.getElementById("quadradoCorPedida").style.fill) == corRO) { //VERMELHO ALARANJADO
         console.log("Número de cliques necessário = 3");
-        if(botaoAplicado == false && contadorClique == 3){
-            pontuacaoNivel3 = pontuacaoNivel3 + 5;
+        if (botaoAplicado == false && contadorClique == 3) {
+            //pontuacaoNivel3 = pontuacaoNivel3 + 5;
+            functionNivel3Conta5();
             circuloPontuacao.style.border = "5px #9EFF00 solid";
-        }
-        else if(botaoAplicado == true){
-            pontuacaoNivel3 = pontuacaoNivel3 + 3;
+        } else if (botaoAplicado == true) {
+            functionNivel3Conta3();
+            //pontuacaoNivel3 = pontuacaoNivel3 + 3;
             circuloPontuacao.style.border = "5px #FF945F solid";
         }
     }
     if ((document.getElementById("quadradoCorPedida").style.fill) == corBV) { //AZUL VIOLETA
         console.log("Número de cliques necessário = 3");
-        if(botaoAplicado == false && contadorClique == 3){
-            pontuacaoNivel3 = pontuacaoNivel3 + 5;
+        if (botaoAplicado == false && contadorClique == 3) {
+            //pontuacaoNivel3 = pontuacaoNivel3 + 5;
+            functionNivel3Conta5();
             circuloPontuacao.style.border = "5px #9EFF00 solid";
-        }
-        else if(botaoAplicado == true){
-            pontuacaoNivel3 = pontuacaoNivel3 + 3;
+        } else if (botaoAplicado == true) {
+            //pontuacaoNivel3 = pontuacaoNivel3 + 3;
+            functionNivel3Conta3();
             circuloPontuacao.style.border = "5px #FF945F solid";
         }
     }
     if ((document.getElementById("quadradoCorPedida").style.fill) == corDG) { //VERDE SECO
         console.log("Número de cliques necessário = 4");
-        if(botaoAplicado == false && contadorClique == 4){
-            pontuacaoNivel3 = pontuacaoNivel3 + 5;
+        if (botaoAplicado == false && contadorClique == 4) {
+            //pontuacaoNivel3 = pontuacaoNivel3 + 5;
+            functionNivel3Conta5();
             circuloPontuacao.style.border = "5px #9EFF00 solid";
-        }
-        else if(botaoAplicado == true){
-            pontuacaoNivel3 = pontuacaoNivel3 + 3;
+        } else if (botaoAplicado == true) {
+            //pontuacaoNivel3 = pontuacaoNivel3 + 3;
+            functionNivel3Conta3();
             circuloPontuacao.style.border = "5px #FF945F solid";
         }
     }
     if ((document.getElementById("quadradoCorPedida").style.fill) == corDB) { //CASTANHO ESCURO
         console.log("Número de cliques necessário = 4");
-        if(botaoAplicado == false && contadorClique == 4){
-            pontuacaoNivel3 = pontuacaoNivel3 + 5;
+        if (botaoAplicado == false && contadorClique == 4) {
+            //pontuacaoNivel3 = pontuacaoNivel3 + 5;
+            functionNivel3Conta5();
             circuloPontuacao.style.border = "5px #9EFF00 solid";
-        }
-        else if(botaoAplicado == true){
-            pontuacaoNivel3 = pontuacaoNivel3 + 3;
+        } else if (botaoAplicado == true) {
+            //pontuacaoNivel3 = pontuacaoNivel3 + 3;
+            functionNivel3Conta3();
             circuloPontuacao.style.border = "5px #FF945F solid";
         }
     }
+    pontuacaoFinalConta();
 }

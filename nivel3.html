@@ -16,6 +16,9 @@
         <button id="botaoInstrucoes" class="botao">Instruções</button>
         <img id="botaoSom" src="img/BotaoSomOn.png" height="130" width="159" alt="">
         <img id="botaoSair" src="img/BotaoSair.png" height="120" width="129" alt="">
+        <audio id="audio" loop>
+            <source src="music/IcelandicArpeggiosDivKid.mp3" type="audio/mpeg">
+        </audio>
     </div>
 </header>
 <main id="boxPrincipal">
@@ -150,7 +153,7 @@
 <footer id="barraPontuação">
     <div>
         <p id="pontuacaoNivel3">Pontuação Nível 3: 0 de 25 pontos</p>
-        <p>Pontuação Final: 0 pontos</p>
+        <p id="pontuacaoFinal">Pontuação Final: 0 pontos</p>
     </div>
     <div id="circulosNiveis">
         <span id="ponto1" class="ponto"></span>
@@ -161,6 +164,8 @@
     </div>
 </footer>
 <script src="js/nivel3_svg.js"></script>
+<script src="js/geral.js"></script>
+<script src="js/pontuacaoFinal.js"></script>
 <script type="text/javascript">
     document.getElementById("botaoInstrucoes").onclick = function () {
         document.getElementById("popInstrucoesNivel1").classList.add('popInstrucoesNivel1On');
@@ -169,6 +174,5 @@
         document.getElementById("popInstrucoesNivel1").classList.remove('popInstrucoesNivel1On');
     };
 </script>
-<script src="js/geral.js"></script>
 </body>
 </html>

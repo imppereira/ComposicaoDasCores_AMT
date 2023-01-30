@@ -14,6 +14,7 @@ main > h2{
 }
 #infoNivel1, #corTextoNivel1{
     display: inline-block;
+    margin-top: 0;
 }
 #corTextoNivel1{
     font-weight: 700;

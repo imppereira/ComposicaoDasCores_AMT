@@ -1,11 +1,15 @@
-var pontuacaoNivel1 = 0;
-var pontuacaoNivel2 = 0;
-var pontuacaoNivel3 = 0;
-console.log("pontuaçãoNivel1: "+pontuacaoNivel1);
+var url = window.location.pathname;
+console.log(url);
 
+if (url == '/composicaoDasCoresAMT/nivel1.html') {
+    pontuacaoFinal = 0;
+    pontuacaoNivel1 = 0;
+    pontuacaoNivel2 = 0;
+    pontuacaoNivel3 = 0;
+}
 var resultadoCliqueNivel1 = [];
-for(var i = 1; i<16; i++){
-    resultadoCliqueNivel1 [i] = "ponto"+i;
+for (var i = 1; i < 16; i++) {
+    resultadoCliqueNivel1 [i] = "ponto" + i;
 }
 //console.log(resultadoCliqueNivel1);
 
@@ -117,11 +121,11 @@ function quadradoClicado(quadrado) {
     console.log("a cor é:" + corTextoNivel1);
 
     numeroClique = numeroClique + 1;
-    circuloPontuacao = document.getElementById("ponto"+[numeroClique]);
+    circuloPontuacao = document.getElementById("ponto" + [numeroClique]);
     console.log(circuloPontuacao);
 
     idQuadradoCerto = "quadrado" + corTextoNivel1;
-    console.log("id "+idQuadradoCerto);
+    console.log("id " + idQuadradoCerto);
 
     if ("quadrado" + corTextoNivel1 == quadrado.id) {
         quadradoCerto(quadrado);
@@ -136,7 +140,7 @@ function quadradoClicado(quadrado) {
 }
 
 function quadradoCerto(quadrado) {
-    pontuacaoNivel1 = pontuacaoNivel1 + 1;
+    pontuacaoNivel1Conta();
 
     quadrado.style.strokeWidth = "10";
     quadrado.style.stroke = "#9EFF00";

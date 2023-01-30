@@ -1,5 +1,7 @@
-/*//MUSICA COMEÇAR AO INICIAR A PÁGINA
-setInterval(playMusic, 500);
+//MUSICA COMEÇAR AO INICIAR A PÁGINA
+if(document.getElementById("audio")!=null) {
+    setInterval(playMusic, 500);
+}
 
 function playMusic() {
     document.getElementById("audio").play();
@@ -19,15 +21,18 @@ function checkSound() {
         console.log("is true");
         document.getElementById("botaoSom").src = "img/BotaoSomOff.png";
     }
-}*/
+}
+var botaoSair = document.getElementById("botaoSair");
 
+if(botaoSair!=null) {
 //BOTÃO EXIT
-document.getElementById("botaoSair").onclick = function () {
-    document.getElementById("popConfirmacaoSair").classList.add('popConfirmacaoSairOn');
-};
-document.getElementById("botaoSairPopConfirmacaoSair").onclick = function () {
-    document.getElementById("popConfirmacaoSair").classList.remove('popConfirmacaoSairOn');
-};
-document.getElementById("botaoSairJogo").onclick = function () {
-    document.location.href = "index.html";
-};
+    document.getElementById("botaoSair").onclick = function () {
+        document.getElementById("popConfirmacaoSair").classList.add('popConfirmacaoSairOn');
+    };
+    document.getElementById("botaoSairPopConfirmacaoSair").onclick = function () {
+        document.getElementById("popConfirmacaoSair").classList.remove('popConfirmacaoSairOn');
+    };
+    document.getElementById("botaoSairJogo").onclick = function () {
+        document.location.href = "index.html";
+    };
+}

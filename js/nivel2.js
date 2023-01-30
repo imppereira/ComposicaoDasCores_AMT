@@ -113,7 +113,8 @@ function clicarCor(cor) {
                 if (comparaPrimarias == true) {
                     console.log("É igual!!!");
                     circulo1.style.border = "5px #9EFF00 solid";
-                    pontuacaoNivel2 = pontuacaoNivel2 + 3;
+                    //pontuacaoNivel2 = pontuacaoNivel2 + 3;
+                    functionNivel2Conta3();
                     document.getElementById("pontuacaoNivel2").innerHTML = "Pontuação Nível 2: <b>" +
                         pontuacaoNivel2 + " </b>de 12 pontos";
 
@@ -198,7 +199,8 @@ function clicarCor(cor) {
                 if (comparaSecundarias == true) {
                     console.log("É igual!!!");
                     circulo2.style.border = "5px #9EFF00 solid";
-                    pontuacaoNivel2 = pontuacaoNivel2 + 3;
+                    //pontuacaoNivel2 = pontuacaoNivel2 + 3;
+                    functionNivel2Conta3();
                     document.getElementById("pontuacaoNivel2").innerHTML = "Pontuação Nível 2: <b>" +
                         pontuacaoNivel2 + " </b>de 12 pontos";
 
@@ -282,7 +284,8 @@ function clicarCor(cor) {
                 if (comparaTerciarias == true) {
                     console.log("É igual!!!");
                     circulo3.style.border = "5px #9EFF00 solid";
-                    pontuacaoNivel2 = pontuacaoNivel2 + 6;
+                    //pontuacaoNivel2 = pontuacaoNivel2 + 6;
+                    functionNivel2Conta6();
                     document.getElementById("pontuacaoNivel2").innerHTML = "Pontuação Nível 2: <b>" +
                         pontuacaoNivel2 + " </b>de 12 pontos";
 
